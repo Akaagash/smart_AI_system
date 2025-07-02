@@ -1,0 +1,42 @@
+   /* Custom CSS for the AI Interview Assistant */
+
+   /* Import Inter font (redundant if already in HTML, but good for standalone CSS) */
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+   body {
+       font-family: 'Inter', sans-serif;
+   }
+
+   /* Basic styling for the prose class to make markdown output look good */
+   .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+       font-weight: 600; /* Semi-bold for headings */
+       margin-top: 1.5em;
+       margin-bottom: 0.5em;
+   }
+
+   .prose strong {
+       font-weight: 700; /* Bold for strong text */
+   }
+
+   .prose ul, .prose ol {
+       list-style-position: inside;
+       margin-left: 1.5em;
+   }
+
+   .prose li {
+       margin-bottom: 0.5em;
+   }
+
+   .prose p {
+       margin-bottom: 1em;
+   }
+
+   /* Ensure textareas resize properly */
+   textarea {
+       min-height: 80px; /* Minimum height for question */
+   }
+
+   #user-answer {
+       min-height: 150px; /* Minimum height for answer */
+   }
+   
